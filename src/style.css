@@ -1,5 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafbff;
+}
+
+.side-menu{
+ max-width: 306px;
+ padding: 36px 28px 76px 28px;
+ background-color: #ffffff;
+}
+.side-logo{
+  font-size: 26px;
+  font-weight: 600;
+  padding-left: 45px;
+  background: left/contain no-repeat url("./icons/setting1.svg");
+  margin-bottom: 53px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+  ;
+}
+.side-logo__v{
+  font-weight: 500;
+  font-size: 10px;
+  color: #838383;
+}
+
+.side-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  list-style: none;
+  margin-bottom: 586px;
+}
+
+.side-list__item{
+  width: 250px;
+  height: 46px;
+  padding: 11px 124px 11px 49px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9197B3;
+}
+
+.side-list__item1{
+  background: no-repeat left 8px center url("./icons/key-square.svg");
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.side-list__item2{
+  background: no-repeat left 8px center url("./icons/3d-square.svg"),
+              no-repeat right 8px center url("./icons/chevron-right.svg");
+
+}
+.side-list__item3{
+  background: no-repeat left 8px center url("./icons/user-square.svg"),
+              no-repeat right 8px center url("./icons/chevron-right2.svg"),
+              #5932EA;
+  border: 1px solid #000000;
+  color: #ffffff;
+  box-shadow: 0 10px 6px rgba(226, 236, 249, 0.5);
+}
+.side-list__item4{
+  background: no-repeat left 8px center url("./icons/wallet-money.svg"),
+              no-repeat right 8px center url("./icons/chevron-right.svg");
+}
+.side-list__item5{
+  background: no-repeat left 8px center url("./icons/discount-shape.svg"),
+              no-repeat right 8px center url("./icons/chevron-right.svg");
+}
+.side-list__item6{
+  background: no-repeat left 8px center url("./icons/message-question.svg"),
+              no-repeat right 8px center url("./icons/chevron-right.svg");
+}
+
+.person-info{
+  display: flex;
+  column-gap: 12px;
+}
+
+.person-info__heading{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.person-info__role{
+  font-weight: 400;
+  font-size: 12px;
+  color: #757575;
+}
+
+/* main */
+.main{
+  padding: 41px 0 0 71px;
+}
+.greeting{
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 51px;
+}
+.customers{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 30px 53px 40px 38px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.customers-text{
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.customers-heading{
+  font-weight: 600;
+  font-size: 22px;
+}
+.customers-paragraph{
+  font-weight: 400;
+  font-size: 14px;
+  color: #16C098;
+}
+
+.search-form{
+  width: 216px;
+  height: 38px;
+  border-radius: 10px;
+  border-color: transparent;
+  background: no-repeat left 8px center url("./icons/search.svg"),
+              #F9FBFF;
+  padding-left: 40px;
+  display: flex;
+  justify-content: right;
+}
+.search-input{
+  width: 176px;
+  background: transparent;
+  border: none;
+}
+.search-input::placeholder{
+  padding: 10px 134px 10px 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #B5B7C0;
 }
