@@ -22,13 +22,14 @@ body{
   padding-left: 45px;
   background: left/contain no-repeat url("./icons/setting1.svg");
   margin-bottom: 53px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
-  ;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.45px;
 }
 .side-logo__v{
   font-weight: 500;
   font-size: 10px;
   color: #838383;
+  letter-spacing: 0.1px;
 }
 
 .side-list{
@@ -87,12 +88,14 @@ body{
 .person-info__heading{
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.8;
 }
 
 .person-info__role{
   font-weight: 400;
   font-size: 12px;
   color: #757575;
+  line-height: 1.2;
 }
 
 /* main */
@@ -102,24 +105,29 @@ body{
 .greeting{
   font-weight: 500;
   font-size: 24px;
-  margin-bottom: 51px;
+  margin-bottom: 63px;
+  letter-spacing: 0.2px;
 }
 .customers{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #ffffff;
-  padding: 30px 53px 40px 38px;
+  padding:28px 53px 40px 38px;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
 .customers-text{
   display: flex;
   flex-direction: column;
-  row-gap: 7px;
+  row-gap: 11px;
 }
 .customers-heading{
   font-weight: 600;
   font-size: 22px;
+  text-transform: capitalize;
+  line-height: 0.85;
+  letter-spacing: 0.25px;
 }
 .customers-paragraph{
   font-weight: 400;
@@ -132,7 +140,7 @@ body{
   height: 38px;
   border-radius: 10px;
   border-color: transparent;
-  background: no-repeat left 8px center url("./icons/search.svg"),
+  background: no-repeat left 9px center url("./icons/search.svg"),
               #F9FBFF;
   padding-left: 40px;
   display: flex;
@@ -148,6 +156,7 @@ body{
   font-weight: 400;
   font-size: 12px;
   color: #B5B7C0;
+  letter-spacing: 1.2px;
 }
 .table{
   display: flex;
@@ -164,7 +173,7 @@ body{
   grid-template-columns: 172px 131px 156px 207px 140px 84px;
   grid-template-rows: 35px;
   justify-items: start;
-  padding: 0 44px 0 38px;
+  padding: 0 38px;
   border-bottom: 1px solid #EEEEEE;
 }
 .table-headings__status{
@@ -174,7 +183,7 @@ body{
   display: grid;
   grid-template-rows: repeat(8, 69px);
   color: #292D32;
-  padding: 0 44px 0 38px;
+  padding: 0 38px;
 }
 .table-row{
   display: grid;
@@ -183,9 +192,12 @@ body{
   align-items: center;
   border-bottom: 1px solid #EEEEEE;
 }
+.table-row__phone{
+  letter-spacing: 0.5px;
+}
 .table-status{
-  width: 80px;
-  height: 25px;
+  width: 82px;
+  height: 27px;
   text-align: center;
   border-radius: 4px;
 }
@@ -210,6 +222,10 @@ body{
   font-weight: 500;
   font-size: 14px;
   color: #B5B7C0;
+}
+.result-data__text{
+  letter-spacing: 0.1px;
+  line-height: 1.8;
 }
 .pages{
   width: 271px;
